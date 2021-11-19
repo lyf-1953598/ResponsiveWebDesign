@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+/* 一些常量定义 */
+:root{
+    --primary-color:#ff434f;
+    --secondary-color:#e3e3e3;
+    --text-color-lightest:#e7e9ec;
+    --text-color-darker:#2e2e2e;
+    --text-color-dark:#494949;
+    --text-color-gray:#8b8b8b;
+    --text-color-dark-gray:#727272;
+    --text-color-light-gray:#c6c6c6;
+    --backdrop-color:rgba(42,42,42,0.69);
+
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    padding: 0 40px;
+
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color-lightest);
+}
+
+/* 文字部分居右侧 */
+header nav{
+    justify-self: end;
+
+}
+
+/* 导航栏取消下划线 */
+header nav a{
+    color:var(--text-color-lightest);
+    text-decoration: none;
+    margin: 0 24px;
+}
+
+header .burger{
+    display: none;
+}
+
+
+/* 整体轮播组件 */
+.glide{
+    position: relative;
+    top: -80px;
+    z-index: 50;
+}
+
+/* 轮播组件中的图片和视频 */
+.glide__slide img,
+.glide__slide video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.slide-caption{
+    position: absolute;
+    z-index: 70;
+    color: var(--text-color-lightest);
+    text-align: center;
+    max-width: 60vw;
+}
+
+/* 使文字居中 */
+.glide__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 设置h1标题 */
+.slide-caption h1{
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.slide-caption.left {
+    width: 80vw;
+    text-align: left;
+}
+
+/* 直接子元素 */
+.slide-caption > *{
+    opacity: 0;
+}
+
+/* 背景遮罩 */
+.backdrop{
+    background: var(--backdrop-color);
+    z-index: 60;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+/* 下滑按钮 */
+.explore-btn{
+    padding: 14px 32px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 4px;
+    color: var(--text-color-lightest);
+    font-size: 18px;
+    /* 鼠标放上去是小手的形状 */
+    cursor: pointer;
+    outline: none;
+}
+
+/* 关于我们part */
+/* 通用样式 */
+
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    /* -content 一维布局 */
+    justify-content: center;
+    flex-direction: column;
+}
+
+section{
+    display: grid;
+    /* 一列有多个元素 */
+    justify-items: center;
+    max-width: 1080px;
+    padding: 0 80px;
+     
+}
+
+.section-bg{
+    position: relative;
+
+}
+
+.section-bg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f9fbfb;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    /* 置于最底层 */
+}
+
+
+/* 区域大标题 */
+.title1{
+    font-size: 34px;
+    color: var(--text-color-darker);
+}
+
+.title1::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-top: 14px;
+    /* 10% 80% 10% 居中 */
+    transform: translateX(10%);
+}
+
+.intro{
+    /* 顺时针从上开始 */
+    margin: 28px 0 60px 0;
+    font-size: 18px;
+    color: var(--text-color-dark-gray);
+}
+
+/* about us文字 */
+.about-us{
+    padding-bottom: 32px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* repeat(3,1fr) */
+    grid-template-rows: 126px 126px;
+    /* 列间距 */
+    column-gap: 8vw;
+}
+
+.feature{
+    display: grid;
+    grid-template-areas: 
+    "icon title"
+    "icon content";
+    /* 在此处定义类名 */
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.feature i.fas{
+    grid-area: icon;
+    font-size: 34px;
+    color:var(--primary-color);
+
+}
+
+.feature-title{
+    grid-area: title;
+    font-size: 18px;
+    color: var(--text-color-darker);
+}
+
+.feature-content{
+    font-size: 13px;
+    grid-area: content;
+    color: var(--text-color-gray);
+    margin-top: 8px;
+}
+
+/* 成功案例 */
+.showcases{
+    max-width: unset;
+    padding: 0;
+    padding-top: 72px;
+}
+
+.filter-btns{
+    margin-top: 54px;
+    margin-bottom: 38px;
+
+}
+
+.filter-btn{
+    margin: 0 7px;
+    background-color: var(--secondary-color);
+    border: 0;
+    color: var(--text-color-dark-gray);
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.filter-btn:focus,.filter-btn:active{
+    outline: none;
+    /* 去除边框 */
+}
+
+.filter-btn.active,.filter-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.showcases .cases{
+    width: 100vw;
+}
+
+.showcases .case-item{
+    /* 长宽保持比例 */
+    width: 25vw;
+    height: 20vw;
+    /* 超出部分不可见 */
+    overflow: hidden;
+}
+
+.case-item img{
+    height: 100%;
+    /* 自动等比缩放 */
+    object-fit: cover;
+}
+/* 服务流程部分 */
+
+/* 区域 */
+.service {
+    padding-top: 131px;
+  }
+  /* 所有服务 */
+  .services {
+    display: grid;
+    /* 同关于我们 */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 38px;
+    row-gap: 34px;
+  }
+  
+  /* 服务 */
+  .service-item {
+    /* 同关于我们 */
+    display: grid;
+    grid-template-areas:
+      "icon title"
+      "icon content";
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr 3fr;
+    /* 内边距 */
+    padding: 24px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* 服务图标 */
+  .service-item i.fas {
+    grid-area: icon;
+    font-size: 42px;
+    color: var(--primary-color);
+    padding-top: 6px;
+  }
+  /* 服务标题 */
+  .service-item .service-title {
+    grid-area: title;
+    color: var(--text-color-darker);
+    font-size: 24px;
+  }
+  /* 服务内容 */
+  .service-item .service-content {
+    grid-area: content;
+    color: var(--text-color-gray);
+    line-height: 30px;
+    font-size: 16px;
+    /* align-self: st; */
+    margin-top: 8px;
+  }
+  
