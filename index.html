@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="libs/scrollReveal/scrollreveal.min.js"></script>
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
@@ -17,7 +18,11 @@
   </head>
   <body>
     <header  class="open">
-      <div class="logo">大漠探险</div>
+      <div class="logo">
+        <img src="images/logo.png" class="logoPic" alt="">
+        <div class="title">大漠探险</div> 
+      </div>
+     
       <nav id="navigate">
         <a href="#home">首页</a>
         <a href="#about-us">关于我们</a>
@@ -36,20 +41,39 @@
       <div class="glide__track" data-glide-el="track">
         <div class="glide__slides">
           <div class="glide__slide">
-            <div class="slide-caption">
-              <h1>戈壁沙漠，生命修行</h1>
-              <button class="explore-btn">探索更多</button>
+            <div class="slide-caption left">
+              <h1>见天地，见众生，见自己</h1>
+              <h4>See heaven and earth, see sentient beings, see yourself</h4>
+              <div class="video-play" >
+                <b class="triangle"></b>
+              </div>
+              <div class="video-player">
+                <!-- <video class="player" controls=""><source src="videos/徒步国脉字幕版_1.mp4"></video> -->
+              </div>
+              <div class="explores">
+                <button class="explore-btn">更多</button>
+                <h4>More</h4>
+                <div class="arrow-action">
+                  <img class="arrow-img" src="images/arrow.svg" style="width: 10px; height: 15px;" alt="">
+                </div>
+              </div>
+              
             </div>
             <div class="backdrop"></div>
-            <img src="images/people-in-couch-1024248.jpg" alt="" />
+            <video src="videos/徒步国脉字幕版_1.mp4" muted autoplay loop></video>
+            
           </div>
           <div class="glide__slide">
-            <div class="slide-caption left">
-              <h1>戈壁沙漠，生命修行2</h1>
-              <button class="explore-btn">探索更多</button>
+            <div class="slide-caption">
+              <h1>戈壁沙漠，生命修行</h1>
+              <button class="explore-btn">更多</button>
+              <h4>More</h4>
+              <div class="arrow-action">
+                <img class="arrow-img" src="images/arrow.svg" style="width: 10px; height: 15px;" alt="">
+              </div>
             </div>
             <div class="backdrop"></div>
-            <video src="videos/working-man.mp4" muted autoplay loop></video>
+            <img src="images/mountain.jpg" alt="" />
           </div>
         </div>
         <div class="glide__arrows" data-glide-el="controls">

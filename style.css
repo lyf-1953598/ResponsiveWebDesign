@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "楷体","楷体_GB2312";
 }
 
 img {
@@ -32,17 +33,36 @@ header {
   align-items: center;
   position: relative;
   z-index: 200;
+  
 }
 
-.logo {
-  font-size: 24px;
+
+
+
+.logo{
+  
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title{
+  font-size: 20px;
   font-weight: 600;
   color: var(--text-color-lightest);
+  transform: translateX(-48px);
+  font-family:"楷体","楷体_GB2312";
+}
+
+.logoPic{
+  max-height: 80px;
+  max-width: 160px;
 }
 
 /* 文字部分居右侧 */
 header nav {
   justify-self: end;
+  display: none;
 }
 
 /* 导航栏取消下划线 */
@@ -64,7 +84,8 @@ header.sticky {
 }
 
 header.sticky .logo,
-header.sticky nav a{
+header.sticky .title,
+header.sticky nav a {
   color: var(--text-color-darker);
 }
 
@@ -83,6 +104,7 @@ header.sticky nav a{
   position: relative;
   top: -80px;
   z-index: 50;
+  
 }
 
 /* 轮播组件中的图片和视频 */
@@ -112,7 +134,7 @@ header.sticky nav a{
 .slide-caption h1 {
   font-size: 54px;
   font-weight: 600;
-  margin-bottom: 48px;
+  /* margin-bottom: 32px; */
 }
 
 .slide-caption.left {
@@ -124,7 +146,64 @@ header.sticky nav a{
 .slide-caption > * {
   opacity: 0;
 }
+/* 播放组件 */
+.video-play {
+  margin-top: 32px;
+  position: relative;
+  z-index: 500;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 8vw;
+  height: 4vw;
+  background: url(images/videoPlay.png) no-repeat 0 0/100% 100%;
+  cursor: pointer;
+  transition: all 500ms;
+  justify-items: center;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
 
+.video-play b {
+  height: 0.1vw;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent white;
+  z-index: 500;
+}
+
+.video-play:hover > .triangle {
+  transform: scale(1.25);
+  transition: 0.3s;
+}
+
+.video-player {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+/* 视频关闭按钮 */
+.vclose {
+  position: relative;
+  left: 50vh;
+  top: -50vh;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  object-fit: inherit;
+  background-image: url("images/cancel.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+}
 /* 背景遮罩 */
 .backdrop {
   background: var(--backdrop-color);
@@ -134,12 +213,13 @@ header.sticky nav a{
   height: 100%;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 /* 下滑按钮 */
 .explore-btn {
-  padding: 14px 32px;
+  padding: 14px 0;
+  padding-bottom: 0px;
   background-color: var(--primary-color);
   border: 0;
   border-radius: 4px;
@@ -148,6 +228,57 @@ header.sticky nav a{
   /* 鼠标放上去是小手的形状 */
   cursor: pointer;
   outline: none;
+  background-color: transparent;
+}
+
+.explore-btn h4{
+  padding-bottom: 12px;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+/* 了解更多及箭头 */
+.arrow-img{
+  cursor: pointer;
+  margin: 18px 12px;
+  width: 10px;
+  height: 20px;
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+  transition: 4s;
+  -webkit-animation: arrowMove 3s ease-in-out 4s infinite;
+  animation: arrowMove 3s ease-in-out 4s infinite;
+  
+}
+
+@-webkit-keyframes arrowMove {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  80% {
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+  }
+}
+@keyframes arrowMove {
+  0% {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+  80% {
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+  }
 }
 
 /* 关于我们part */
@@ -159,13 +290,17 @@ header.sticky nav a{
   /* -content 一维布局 */
   justify-content: center;
   flex-direction: column;
+  
+  
 }
 
 section {
   display: grid;
+  /* height: 100vh; */
   /* 一列有多个元素 */
   justify-items: center;
   max-width: 1080px;
+  
   padding: 0 80px;
 }
 
@@ -587,7 +722,7 @@ footer {
 /* 底部菜单 */
 .footer-menus {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1080px;
   display: grid;
   /* 5列布局 */
   grid-template-columns: 2fr repeat(4, 1fr);
@@ -649,11 +784,11 @@ footer {
 
 /* 返回顶部按钮，默认不显示 */
 .scrollToTop {
-    display: none;
-    position: relative;
-    z-index: 300;
-  }
-  
+  display: none;
+  position: relative;
+  z-index: 300;
+}
+
 /* 返回顶部按钮 */
 .scrollToTop a {
   width: 32px;
@@ -927,6 +1062,7 @@ footer {
     padding: 8px 18px;
     font-size: 14px;
   }
+
 
   /* 成功案例显示为1列 */
   .showcases .case-item {
