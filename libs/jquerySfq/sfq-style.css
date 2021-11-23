@@ -1,0 +1,150 @@
+/* html, body{
+	min-height: 100%;
+}
+*{
+	margin:0;
+	padding:0;
+	font-size: 12px;
+} */
+ul{
+	list-style:none;
+}
+.hide{
+    display: none;
+}
+.lf{
+	float: left;
+}
+.lr{
+	float: right;
+}
+.red, .red a,.red a h5, .red a p{
+    color:#FF0000 !important;
+}
+/* html{
+	background: #f0efef;
+} */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-group{
+	/* width:100vw; */
+	max-width: 1080px;
+	/* height:100vh; */
+	/* background: #efefef; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 180px;
+}
+
+.content{
+	width:1000px;
+	height:480px;
+	display: flex;
+}
+
+.item-group{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:400px;
+	position: relative;
+	width: 45px;
+	overflow: hidden;
+	transition: all .4s;
+}
+.item-group .title{
+	width:330px;
+	height:36px;
+	line-height: 36px;
+	text-indent: 24px;
+	left:-146px;
+	/* background: #ee6475; */
+	background: var(--desert-color);
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	transform: rotate(-90deg);
+	position: absolute;
+	cursor: pointer;
+	z-index: 1;transition:all .7s ease 0s;
+}
+.item-group .title:hover{
+	background-color: #222
+}
+.item-group .desc{
+	box-sizing: border-box;
+	height: 330px;
+	background: #fff;
+	padding:30px 30px 30px calc(30px + 36px);
+	color: #666;
+	flex: 1;
+	opacity: 0;
+	transition: all 0.4s;
+}
+.item-group .desc:hover{
+    background-color: #F9E9DC;
+    border: 1px dashed #313131;box-sizing: border-box;
+}
+.item-group .desc p{
+	margin-bottom:10px;
+	width: 505px;
+}
+.item-group .desc .btn{
+	/* margin-top:2px; */
+	/* position: relative; */
+	/* margin-bottom: 5px; */
+	/* padding-bottom: 5px; */
+	display: inline-block;
+	padding:10px 30px;
+	border-radius: 20px;
+	color: #fff;
+	background: var(--desert-color);transition:all .7s ease 0s;
+}
+.item-group .desc .btn:hover{	
+	background-color: #222
+}
+
+.item-group .img img{
+
+	width: 280px;
+	height: 330px;
+	opacity: 0;
+	box-sizing: border-box;
+	border:4px solid #fff;
+	transition: all 0.4s;
+	object-fit: cover;
+}
+.item-group.self{
+	width:100%;
+}
+
+.item-group.self .desc{
+	opacity: 1;
+}
+.item-group.self .img img{
+	object-fit: cover;
+	opacity: 1;
+}
+
+/* .item-group .desc, .item-group .img{
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+.item-group .desc{
+	width: 36px;
+	padding:0;
+}
+
+.item-group.self .desc, .item-group.self .img{
+	width: auto;
+	opacity: 1;
+}
+.item-group.self .desc{
+	padding:30px 30px 30px calc(30px + 36px);
+} */

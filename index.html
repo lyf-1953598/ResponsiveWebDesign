@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head >
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="libs/scrollReveal/scrollreveal.min.js"></script>
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/jquerySfq/jquery.min.js"></script>
+    <script src="libs/jquerySfq/style.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
@@ -13,19 +15,20 @@
     <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
     <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
     <link rel="stylesheet" href="style.css" />
-   
+    <link rel="stylesheet" href="libs/jquerySfq/sfq-style.css">
+  
     <title>Document</title>
   </head>
   <body>
-    <header  class="open">
+    <header class="open">
       <div class="logo">
-        <img src="images/logo.png" class="logoPic" alt="">
-        <div class="title">大漠探险</div> 
+        <img src="images/logo.png" class="logoPic" alt="" />
+        <div class="title">大漠探险</div>
       </div>
-     
+
       <nav id="navigate">
         <a href="#home">首页</a>
-        <a href="#about-us">关于我们</a>
+        <a href="#about-us">了解我们</a>
         <a href="#showcases">成功案例</a>
         <a href="#service">服务流程</a>
         <a href="#team-intro">团队介绍</a>
@@ -44,7 +47,7 @@
             <div class="slide-caption left">
               <h1>见天地，见众生，见自己</h1>
               <h4>See heaven and earth, see sentient beings, see yourself</h4>
-              <div class="video-play" >
+              <div class="video-play">
                 <b class="triangle"></b>
               </div>
               <div class="video-player">
@@ -54,14 +57,22 @@
                 <button class="explore-btn">更多</button>
                 <h4>More</h4>
                 <div class="arrow-action">
-                  <img class="arrow-img" src="images/arrow.svg" style="width: 10px; height: 15px;" alt="">
+                  <img
+                    class="arrow-img"
+                    src="images/arrow.svg"
+                    style="width: 10px; height: 15px"
+                    alt=""
+                  />
                 </div>
               </div>
-              
             </div>
             <div class="backdrop"></div>
-            <video src="videos/徒步国脉字幕版_1.mp4" muted autoplay loop></video>
-            
+            <video
+              src="videos/徒步国脉字幕版_1.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
           </div>
           <div class="glide__slide">
             <div class="slide-caption">
@@ -69,7 +80,12 @@
               <button class="explore-btn">更多</button>
               <h4>More</h4>
               <div class="arrow-action">
-                <img class="arrow-img" src="images/arrow.svg" style="width: 10px; height: 15px;" alt="">
+                <img
+                  class="arrow-img"
+                  src="images/arrow.svg"
+                  style="width: 10px; height: 15px"
+                  alt=""
+                />
               </div>
             </div>
             <div class="backdrop"></div>
@@ -92,8 +108,93 @@
     </div>
     <div class="content-wrapper">
       <section id="about-us" class="about-us">
-        <h2 class="title1">关于我们</h2>
-        <p class="intro">敦煌市大漠探险旅行社</p>
+        <img class="home-about-right fade-in-right" src="images/about-us-right.jpg" alt="">
+        <img class="home-about-left fade-in-left" src="images/left-page.png" alt="">
+        <h2 class="title1 left-side">了解我们</h2>
+        <p class="intro left-side">敦煌市大漠探险旅行社</p>
+        <div class="main-group">
+          <ul class="content">
+            <li class="item-group self">
+              <h3 class="title" data-index="0">
+                金沙明珠，大美敦煌
+              </h3>
+              <div class="desc">
+                <p>
+                  敦，大地之意。煌，繁盛也。茫茫戈壁，烈烈西风，大漠孤烟，长河落日，遥远的敦煌大漠之上，藏着荒芜却美好的风景。</p>
+                <p>
+                  如果说穿梭奔腾于高山峡谷的万里长江是一首雄浑的交响乐曲，那么静卧在河西古道的敦煌无疑是一部气势恢弘的历史长卷；如果说蜿蜒盘旋与崇山峻岭之间的万里长城是一条腾飞的巨龙，那么沉睡在丝绸之路上的敦煌无疑是一条跃动的艺术长廊。思慕着古老文明的迷人风采，仰慕着历史的悠悠神韵。来到敦煌，跋涉于漫漫黄沙之间，追寻着深埋心中多年的敦煌之梦……</p>
+                <p>
+                  古老的敦煌，以它独特的自然景观，还有悠久的历史文化点燃了人类的文明之火。敦煌，历经千年的开拓，沉淀，延续至今，犹如一颗璀璨的明珠在世界文化艺术宝库中闪烁着永恒的光芒……                </p>
+              
+                <a class="btn" href="#">点击进入</a>
+              </div>
+              <div class="img">
+                <img src="images/group1.jpg" alt="">
+              </div>
+            </li>
+            <li class="item-group">
+              <h3 class="title" data-index="1">
+                仿古寻今，大漠拾遗
+              </h3>
+              <div class="desc">
+                <p>
+                  敦煌市大漠探险旅行社，主要经营徒步活动后勤保障、丝绸之路沿线的常规旅游及全国各地的旅游探险活动。拥有GPS全球卫星定位仪，卫星电话，对讲机、30㎡充气大帐，140㎡充气餐帐，双人小账等专业设备，更有骆驼200余峰。
+                </p>
+                <p>
+                  专业户外活动后勤保障公司，可接待千人以上的大型户外活动，并为“非凡足迹”、“千人戈壁挑战赛”、“行走的力量”、“国际商学院丝绸之路挑战赛”、“中国医疗行业戈壁徒步挑战赛”等大型徒步活动提供后勤保障。并承接了“阿里巴巴全球精英拓展”“可口可乐”、“康宝莱”等多家大型公司的户外徒步拓展活动。
+                </p>
+                <p>
+                  更多次穿越罗布泊，大海道，楼兰探宝、西藏羌塘、攀登阿尔金山、穿越可可西里等各种探险活动。
+                </p>
+                  <a class="btn" href="#">点击进入</a>
+              </div>
+              <div class="img">
+                <img src="images/group2.jpg" alt="">
+              </div>
+            </li>
+            <li class="item-group">
+              <h3 class="title" data-index="2">
+                夏日阳光，带你欣赏
+              </h3>
+              <div class="desc">
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                <a class="btn" href="#">点击进入</a>
+              </div>
+              <div class="img">
+                <img src="images/group3.jpeg" alt="">
+              </div>
+            </li>
+            <li class="item-group">
+              <h3 class="title" data-index="3">
+                夏日阳光，带你欣赏
+              </h3>
+              <div class="desc">
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                <p>
+                  躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
+                </p>
+                
+                <a class="btn" href="#">点击进入</a>
+              </div>
+              <div class="img">
+                <img src="images/group4.jpeg" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
         <div class="features">
           <!-- 公司业务 -->
           <div class="feature">
@@ -344,8 +445,8 @@
           </div>
         </div>
       </section>
-       <!-- 数据展示  -->
-       <section id="data-section" class="data-section">
+      <!-- 数据展示  -->
+      <section id="data-section" class="data-section">
         <!-- 单个数据  -->
         <div class="data-piece">
           <!-- 图标 -->
@@ -371,12 +472,10 @@
           <div class="data-desc">个项目</div>
         </div>
       </section>
-       <!-- 公司动态 -->
-       <section id="company-activities" class="company-activities">
+      <!-- 公司动态 -->
+      <section id="company-activities" class="company-activities">
         <h2 class="title1">公司动态</h2>
-        <p class="intro">
-          关注公司动态，第一时间获取一手消息
-        </p>
+        <p class="intro">关注公司动态，第一时间获取一手消息</p>
         <!-- 动态容器 -->
         <div class="activities">
           <!-- 动态 -->
@@ -437,7 +536,6 @@
           </div>
         </div>
       </section>
-
     </div>
 
     <!-- 底部信息 -->
@@ -488,13 +586,9 @@
           </ul>
         </div>
         <!-- 备案信息 -->
-        <p class="icp-info">
-          京ICP备 12345678901-1 号
-        </p>
+        <p class="icp-info">京ICP备 12345678901-1 号</p>
         <!-- 版权信息 -->
-        <p class="rights">
-          &copy; 2020 峰华科技 - 响应式网络公司官网 版权所有
-        </p>
+        <p class="rights">&copy; 2020 峰华科技 - 响应式网络公司官网 版权所有</p>
         <!-- 返回顶部按钮 -->
         <div class="scrollToTop">
           <a href="#home"><i class="fas fa-chevron-up"></i></a>
@@ -506,6 +600,5 @@
     <script src="libs/anime/anime.min.js"></script>
     <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
     <script src="index.js"></script>
-
   </body>
 </html>
