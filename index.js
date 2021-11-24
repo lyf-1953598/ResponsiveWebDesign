@@ -1,16 +1,17 @@
+
 const glide = new Glide(".glide");
 const captionsEl = document.querySelectorAll(".slide-caption");
 const headerEl = document.querySelector("header");
 const scrollToTop = document.querySelector(".scrollToTop");
 const backDropEl = document.querySelector(".backdrop");
-
+const leftPartImage = document.querySelector(".home-about-left");
 // 窗口滚动处理
 //#region 固定导航
 
 window.addEventListener("scroll", () => {
   // 固定导航
   let height = headerEl.getBoundingClientRect().height;
-  if (window.pageYOffset - height >= backDropEl.offsetHeight) {
+  if (window.pageYOffset - height >= (backDropEl.offsetHeight-80)) {
     if (!headerEl.classList.contains("sticky")) {
       headerEl.classList.add("sticky");
     }
@@ -24,6 +25,27 @@ window.addEventListener("scroll", () => {
   } else {
     scrollToTop.style.display = "none";
   }
+
+  // if(window.pageYOffset >backDropEl.offsetHeight)
+  // {
+  //   leftPartImage.style.display="block";
+    
+  // }else{
+  //   leftPartImage.style.display = "none";
+  // }
+  // if (window.pageYOffset - height >= backDropEl.offsetHeight) {
+  //   if (!leftPartImage.classList.contains("fixOnLeft")) {
+  //     leftPartImage.classList.add("fixOnLeft");
+  //   } else {
+  //     leftPartImage.classList.remove("fixOnLeft");
+  //   }
+  // }else{
+  //   if (leftPartImage.classList.contains("fixOnLeft")) {
+  //     leftPartImage.classList.remove("fixOnLeft");
+  //   } else {
+  //     leftPartImage.classList.add("fixOnLeft");
+  //   }
+  // }
 });
 //#endregion 固定导航
 
@@ -40,6 +62,7 @@ $(window).scroll(function () {
       //判断当前位置是否为导航栏对应区域
       $(this).css({
         color: "rgba(247, 150, 24, 0.555)",
+        // "font-style": "solid"
       }); //将导航栏选项设置样式
       $(this).siblings().css({
         color: "black",
@@ -134,19 +157,18 @@ const pageRightFadeIn = {
   distance: "50px",
   duration: 500,
   easing: "ease-in-out",
-  origin: "right"
-}
-ScrollReveal().reveal(".fade-in-right",{...pageRightFadeIn});
+  origin: "right",
+};
+ScrollReveal().reveal(".fade-in-right", { ...pageRightFadeIn });
 const pageLeftFadeIn = {
   delay: 300,
   distance: "50px",
   duration: 500,
   easing: "ease-in-out",
-  origin: "left"
-}
-ScrollReveal().reveal(".fade-in-left",{...pageLeftFadeIn});
+  origin: "left",
+};
+ScrollReveal().reveal(".fade-in-left", { ...pageLeftFadeIn });
 //#endregion
-
 
 // 滚动展示插件
 // 通用动画配置，从底部50象素滑出来
@@ -266,7 +288,7 @@ list = initSrollPosition("body", list);
 function initSrollPosition(ele, list) {
   var container = document.querySelector(ele);
   for (var i in list) {
-    list[i].position = document.querySelector("." + list[i].ele).offsetTop;
+    list[i].position = document.querySelector("." + list[i].ele).offsetTop- 80;
   }
   return list;
 }
@@ -311,6 +333,8 @@ function moveTo(isDown) {
 // #endregion
 
 new Action({
-  title_item: $('.title'),
-  item: $('.item-group')
+  title_item: $(".title"),
+  item: $(".item-group"),
 });
+
+

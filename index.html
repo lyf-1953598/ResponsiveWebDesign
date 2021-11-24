@@ -8,6 +8,7 @@
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="libs/jquerySfq/jquery.min.js"></script>
     <script src="libs/jquerySfq/style.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
@@ -15,9 +16,11 @@
     <link rel="stylesheet" href="libs/glide/glide.core.min.css" />
     <link rel="stylesheet" href="libs/glide/glide.theme.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="libs/jquerySfq/sfq-style.css">
-  
-    <title>Document</title>
+    <link rel="stylesheet" href="libs/jquerySfq/sfq-style.css" />
+    <link rel="stylesheet" href="libs/responsive-card/swiper.min.css" />
+    <link rel="stylesheet" href="libs/responsive-card/style.css" />
+
+    <title>大漠探险~</title>
   </head>
   <body>
     <header class="open">
@@ -108,34 +111,41 @@
     </div>
     <div class="content-wrapper">
       <section id="about-us" class="about-us">
-        <img class="home-about-right fade-in-right" src="images/about-us-right.jpg" alt="">
-        <img class="home-about-left fade-in-left" src="images/left-page.png" alt="">
-        <h2 class="title1 left-side">了解我们</h2>
-        <p class="intro left-side">敦煌市大漠探险旅行社</p>
+        <img
+          class="home-about-right fade-in-right"
+          src="images/about-us-right.jpg"
+          alt=""
+        />
+        <img
+          class="home-about-left fade-in-left"
+          src="images/left-page.png"
+          alt=""
+        />
+        <h2 class="title1 left-side about-us-title">了解我们</h2>
+        <p class="intro left-side company-name">敦煌市大漠探险旅行社</p>
         <div class="main-group">
           <ul class="content">
             <li class="item-group self">
-              <h3 class="title" data-index="0">
-                金沙明珠，大美敦煌
-              </h3>
+              <h3 class="title" data-index="0">金沙明珠，大美敦煌</h3>
               <div class="desc">
                 <p>
-                  敦，大地之意。煌，繁盛也。茫茫戈壁，烈烈西风，大漠孤烟，长河落日，遥远的敦煌大漠之上，藏着荒芜却美好的风景。</p>
+                  敦，大地之意。煌，繁盛也。茫茫戈壁，烈烈西风，大漠孤烟，长河落日，遥远的敦煌大漠之上，藏着荒芜却美好的风景。
+                </p>
                 <p>
-                  如果说穿梭奔腾于高山峡谷的万里长江是一首雄浑的交响乐曲，那么静卧在河西古道的敦煌无疑是一部气势恢弘的历史长卷；如果说蜿蜒盘旋与崇山峻岭之间的万里长城是一条腾飞的巨龙，那么沉睡在丝绸之路上的敦煌无疑是一条跃动的艺术长廊。思慕着古老文明的迷人风采，仰慕着历史的悠悠神韵。来到敦煌，跋涉于漫漫黄沙之间，追寻着深埋心中多年的敦煌之梦……</p>
+                  如果说穿梭奔腾于高山峡谷的万里长江是一首雄浑的交响乐曲，那么静卧在河西古道的敦煌无疑是一部气势恢弘的历史长卷；如果说蜿蜒盘旋与崇山峻岭之间的万里长城是一条腾飞的巨龙，那么沉睡在丝绸之路上的敦煌无疑是一条跃动的艺术长廊。思慕着古老文明的迷人风采，仰慕着历史的悠悠神韵。来到敦煌，跋涉于漫漫黄沙之间，追寻着深埋心中多年的敦煌之梦……
+                </p>
                 <p>
-                  古老的敦煌，以它独特的自然景观，还有悠久的历史文化点燃了人类的文明之火。敦煌，历经千年的开拓，沉淀，延续至今，犹如一颗璀璨的明珠在世界文化艺术宝库中闪烁着永恒的光芒……                </p>
-              
+                  古老的敦煌，以它独特的自然景观，还有悠久的历史文化点燃了人类的文明之火。敦煌，历经千年的开拓，沉淀，延续至今，犹如一颗璀璨的明珠在世界文化艺术宝库中闪烁着永恒的光芒……
+                </p>
+
                 <a class="btn" href="#">点击进入</a>
               </div>
               <div class="img">
-                <img src="images/group1.jpg" alt="">
+                <img src="images/group1.jpg" alt="" />
               </div>
             </li>
             <li class="item-group">
-              <h3 class="title" data-index="1">
-                仿古寻今，大漠拾遗
-              </h3>
+              <h3 class="title" data-index="1">仿古寻今，大漠拾遗</h3>
               <div class="desc">
                 <p>
                   敦煌市大漠探险旅行社，主要经营徒步活动后勤保障、丝绸之路沿线的常规旅游及全国各地的旅游探险活动。拥有GPS全球卫星定位仪，卫星电话，对讲机、30㎡充气大帐，140㎡充气餐帐，双人小账等专业设备，更有骆驼200余峰。
@@ -146,16 +156,14 @@
                 <p>
                   更多次穿越罗布泊，大海道，楼兰探宝、西藏羌塘、攀登阿尔金山、穿越可可西里等各种探险活动。
                 </p>
-                  <a class="btn" href="#">点击进入</a>
+                <a class="btn" href="#">点击进入</a>
               </div>
               <div class="img">
-                <img src="images/group2.jpg" alt="">
+                <img src="images/group2.jpg" alt="" />
               </div>
             </li>
             <li class="item-group">
-              <h3 class="title" data-index="2">
-                夏日阳光，带你欣赏
-              </h3>
+              <h3 class="title" data-index="2">夏日阳光，带你欣赏</h3>
               <div class="desc">
                 <p>
                   躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
@@ -169,13 +177,11 @@
                 <a class="btn" href="#">点击进入</a>
               </div>
               <div class="img">
-                <img src="images/group3.jpeg" alt="">
+                <img src="images/group3.jpeg" alt="" />
               </div>
             </li>
             <li class="item-group">
-              <h3 class="title" data-index="3">
-                夏日阳光，带你欣赏
-              </h3>
+              <h3 class="title" data-index="3">夏日阳光，带你欣赏</h3>
               <div class="desc">
                 <p>
                   躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
@@ -186,66 +192,176 @@
                 <p>
                   躺在树荫下，感觉着风轻轻拂过脸庞，一缕缕阳光透过树叶间的缝隙，在地上映出一片，摆放在阳台的各个角落，在阳光的照耀下，赏心悦目，既是一幅图画，也是一种风景，洋，溢着浓浓的生活气息。欣赏着，心中荡漾着别样的幸福与满足。
                 </p>
-                
+
                 <a class="btn" href="#">点击进入</a>
               </div>
               <div class="img">
-                <img src="images/group4.jpeg" alt="">
+                <img src="images/group4.jpeg" alt="" />
               </div>
             </li>
           </ul>
         </div>
-        <div class="features">
-          <!-- 公司业务 -->
-          <div class="feature">
-            <!-- 左侧业务图标 -->
-            <i class="fas fa-lightbulb"></i>
-            <!-- 右侧业务标题 -->
-            <h4 class="feature-title">品牌创意</h4>
-            <!-- 右侧业务内容 -->
-            <p class="feature-content">
-              为企业设计独特的并能完美呈现企业价值观的视觉
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-chart-line"></i>
-            <h4 class="feature-title">整合营销</h4>
-            <p class="feature-content">
-              通过市场进入分析、制定网络营销战略、网络营销实施
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-shopping-cart"></i>
-            <h4 class="feature-title">电子商务</h4>
-            <p class="feature-content">
-              根据企业需求，开设不同的销售渠道，通过网上直销
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-desktop"></i>
-            <h4 class="feature-title">网页设计</h4>
-            <p class="feature-content">
-              通过网站建设、智能建站、域名主机、企业邮箱
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-tachometer-alt"></i>
-            <h4 class="feature-title">网站优化</h4>
-            <p class="feature-content">
-              网站推广是指将网站推广到国内各大知名网站和搜索引擎
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-server"></i>
-            <h4 class="feature-title">网站架设</h4>
-            <p class="feature-content">
-              通过绑定域名和服务器，把网站展现给全世界
-            </p>
-          </div>
-        </div>
       </section>
       <section id="showcases" class="showcases section-bg">
-        <h2 class="title1">成功案例</h2>
+        <img
+          class="home-about-left fade-in-left"
+          src="images/left-page.png"
+          alt=""
+        />
+        <h2 class="title1 success-cases">成功案例</h2>
+        <p class="intro success-cases target">敦煌市大漠探险旅行社</p>
+        <div class="wrapper">
+          <!-- <div class="background">
+            <img
+              src="https://images.unsplash.com/photo-1624921245399-2e21fe6e0611?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80"
+              alt=""
+            />
+          </div> -->
+          <div class="item-bg"></div>
+          <div class="news-slider">
+            <div class="news-slider__wrp swiper-wrapper">
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">24</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1607793726482-84fa7865eaca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">25</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1512895691935-ddd98c716644?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">26</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1602765892971-df8249b3599f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">27</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1625247666944-c93f0ee3da9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2090&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">28</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1619901373505-bb71126e5fbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">29</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__title">Lorem Ipsum Dolor Sit Amed</div>
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s...
+                  </p>
+                  <div class="news__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1624613949648-ea13ecd7165f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      alt="news"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="news-slider__ctr">
+              <div class="news-slider__arrows">
+                <!-- <button class="news-slider__arrow news-slider-prev">
+                  <span class="icon-font">
+                    <svg class="icon icon-arrow-left">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </span>
+                </button>
+                <button class="news-slider__arrow news-slider-next">
+                  <span class="icon-font">
+                    <svg class="icon icon-arrow-right">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </span>
+                </button> -->
+              </div>
+              <div class="news-slider__pagination"></div>
+            </div>
+          </div>
+        </div>
         <div class="filter-btns">
           <button class="filter-btn active" data-filter="*">全部</button>
           <button class="filter-btn" data-filter=".web">WEB</button>
@@ -599,6 +715,9 @@
     <script src="libs/isotope/isotope.pkgd.min.js"></script>
     <script src="libs/anime/anime.min.js"></script>
     <script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="libs/jquery/jquery-3.5.1.js"></script>
+    <script src="libs/responsive-card/swiper.min.js"></script>
+    <script src="libs/responsive-card/script.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
