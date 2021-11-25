@@ -65,7 +65,7 @@ a, a:hover {
 }
 
 .news-slider {
-  z-index: 2;
+  z-index: 200;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -147,7 +147,8 @@ a, a:hover {
   width: 13px;
   height: 10px;
   display: inline-block;
-  background: #fff;
+  /* background: #fff; */
+  background: var(--desert-color);
   opacity: 0.2;
   margin: 0 5px;
   border-radius: 20px;
@@ -156,7 +157,8 @@ a, a:hover {
 }
 .news-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: var(--desert-color);
   width: 100px;
   transition-delay: 0s;
 }
@@ -169,7 +171,8 @@ a, a:hover {
   
   padding: 40px;
   padding-bottom: 0px;
-  color: #fff;
+  /* color: #fff; */
+  color: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: block;
   transition: all 0.3s;

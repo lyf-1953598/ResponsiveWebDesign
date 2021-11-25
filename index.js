@@ -1,4 +1,5 @@
 
+
 const glide = new Glide(".glide");
 const captionsEl = document.querySelectorAll(".slide-caption");
 const headerEl = document.querySelector("header");
@@ -131,24 +132,24 @@ glide.mount();
 //#endregion 轮播图部分
 
 //#region 筛选图片
-const isotope = new Isotope(".cases", {
-  layoutMode: "fitRows",
-  itemSelector: ".case-item",
-});
+// const isotope = new Isotope(".cases", {
+//   layoutMode: "fitRows",
+//   itemSelector: ".case-item",
+// });
 
-const filterBtns = document.querySelector(".filter-btns");
+// const filterBtns = document.querySelector(".filter-btns");
 
-filterBtns.addEventListener("click", (e) => {
-  let { target } = e;
-  const filterOption = target.getAttribute("data-filter");
-  if (filterOption) {
-    document
-      .querySelectorAll(".filter-btn.active")
-      .forEach((btn) => btn.classList.remove("active"));
-    target.classList.add("active");
-    isotope.arrange({ filter: filterOption });
-  }
-});
+// filterBtns.addEventListener("click", (e) => {
+//   let { target } = e;
+//   const filterOption = target.getAttribute("data-filter");
+//   if (filterOption) {
+//     document
+//       .querySelectorAll(".filter-btn.active")
+//       .forEach((btn) => btn.classList.remove("active"));
+//     target.classList.add("active");
+//     isotope.arrange({ filter: filterOption });
+//   }
+// });
 //#endregion
 
 //#region 使图片淡入
@@ -180,8 +181,8 @@ const staggeringOption = {
   origin: "bottom",
 };
 // 滚动到业务流程时的展示动画，interval需要单独设置，每个feature元素相继350毫秒，下同
-ScrollReveal().reveal(".feature", { ...staggeringOption, interval: 350 });
-ScrollReveal().reveal(".service-item", { ...staggeringOption, interval: 350 });
+// ScrollReveal().reveal(".feature", { ...staggeringOption, interval: 350 });
+// ScrollReveal().reveal(".service-item", { ...staggeringOption, interval: 350 });
 
 // 数据部分
 const dataSectionEl = document.querySelector(".data-section");
