@@ -1,0 +1,560 @@
+//原来的工作组件部分
+<div class="features">
+    <!-- 公司业务 -->
+    <div class="feature">
+      <!-- 左侧业务图标 -->
+      <i class="fas fa-lightbulb"></i>
+      <!-- 右侧业务标题 -->
+      <h4 class="feature-title">品牌创意</h4>
+      <!-- 右侧业务内容 -->
+      <p class="feature-content">
+        为企业设计独特的并能完美呈现企业价值观的视觉
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-chart-line"></i>
+      <h4 class="feature-title">整合营销</h4>
+      <p class="feature-content">
+        通过市场进入分析、制定网络营销战略、网络营销实施
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-shopping-cart"></i>
+      <h4 class="feature-title">电子商务</h4>
+      <p class="feature-content">
+        根据企业需求，开设不同的销售渠道，通过网上直销
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-desktop"></i>
+      <h4 class="feature-title">网页设计</h4>
+      <p class="feature-content">
+        通过网站建设、智能建站、域名主机、企业邮箱
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-tachometer-alt"></i>
+      <h4 class="feature-title">网站优化</h4>
+      <p class="feature-content">
+        网站推广是指将网站推广到国内各大知名网站和搜索引擎
+      </p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-server"></i>
+      <h4 class="feature-title">网站架设</h4>
+      <p class="feature-content">
+        通过绑定域名和服务器，把网站展现给全世界
+      </p>
+    </div>
+  </div>
+
+
+
+//原来的按钮选择部分
+  <div class="filter-btns">
+    <button class="filter-btn active" data-filter="*">全部</button>
+    <button class="filter-btn" data-filter=".web">WEB</button>
+    <button class="filter-btn" data-filter=".mobile">移动</button>
+    <button class="filter-btn" data-filter=".science">科研</button>
+  </div>
+  <div class="cases">
+    <!-- case-item样式类，web science为类别类 -->
+    <div class="case-item web science">
+      <!-- 图片 -->
+      <img
+        src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg"
+        alt=""
+      />
+    </div>
+    <div class="case-item web science">
+      <img src="images/photo-of-imac-near-macbook-1029757.jpg" alt="" />
+    </div>
+    <div class="case-item web">
+      <img src="images/apple-laptop-notebook-office-39284.jpg" alt="" />
+    </div>
+    <div class="case-item web">
+      <img
+        src="images/apple-apple-device-design-desk-285814.jpg"
+        alt=""
+      />
+    </div>
+    <div class="case-item mobile">
+      <img
+        src="images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg"
+        alt=""
+      />
+    </div>
+    <div class="case-item science">
+      <img src="images/person-holding-a-smartphone-892757.jpg" alt="" />
+    </div>
+    <div class="case-item mobile web science">
+      <img src="images/blur-close-up-code-computer-546819.jpg" alt="" />
+    </div>
+    <div class="case-item mobile">
+      <img
+        src="images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <div class="filter-btns">
+          <button class="filter-btn active" data-filter="*">全部</button>
+          <button class="filter-btn" data-filter=".web">WEB</button>
+          <button class="filter-btn" data-filter=".mobile">移动</button>
+          <button class="filter-btn" data-filter=".science">科研</button>
+        </div>
+        <div class="cases">
+          <!-- case-item样式类，web science为类别类 -->
+          <div class="case-item web science">
+            <!-- 图片 -->
+            <img
+              src="images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg"
+              alt=""
+            />
+          </div>
+          <div class="case-item web science">
+            <img src="images/photo-of-imac-near-macbook-1029757.jpg" alt="" />
+          </div>
+          <div class="case-item web">
+            <img src="images/apple-laptop-notebook-office-39284.jpg" alt="" />
+          </div>
+          <div class="case-item web">
+            <img
+              src="images/apple-apple-device-design-desk-285814.jpg"
+              alt=""
+            />
+          </div>
+          <div class="case-item mobile">
+            <img
+              src="images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg"
+              alt=""
+            />
+          </div>
+          <div class="case-item science">
+            <img src="images/person-holding-a-smartphone-892757.jpg" alt="" />
+          </div>
+          <div class="case-item mobile web science">
+            <img src="images/blur-close-up-code-computer-546819.jpg" alt="" />
+          </div>
+          <div class="case-item mobile">
+            <img
+              src="images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+
+        <!-- 同关于我们 -->
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">需求沟通</h2>
+            <p class="service-content">
+              客户提出网站建设的基本需求，包括设计要求及功能要求
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-gavel"></i>
+            <h2 class="service-title">项目评估</h2>
+            <p class="service-content">
+              根据客户提出的需求进行评估，估算出相应的时间与费用
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-file-signature"></i>
+            <h2 class="service-title">签订合同</h2>
+            <p class="service-content">
+              合作双方确认费用、工期、合作要求的基础上，双方共同签订合同
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user"></i>
+            <h2 class="service-title">提案阶段</h2>
+            <p class="service-content">
+              完成网站初稿DEMO设计，包括首页风格，内页风格页面
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h2 class="service-title">制作阶段</h2>
+            <p class="service-content">
+              完成所有页面的设计，进行程序开发以及前后后台的页面整合
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user-check"></i>
+            <h2 class="service-title">网站验收</h2>
+            <p class="service-content">
+              根据合同条款进行网站验收，并签署网站验收确认单
+            </p>
+          </div>
+        </div>
+
+
+<section id="team-intro" class="team-intro section-bg">
+        <h2 class="title1">团队介绍</h2>
+        <!-- 团队成员容器 -->
+        <div class="team-members">
+          <!-- 团队成员 -->
+          <div class="team-member">
+            <!-- 成员照片 -->
+            <div class="profile-image">
+              <img src="images/man-wearing-black-suit-2955376.jpg" alt="" />
+            </div>
+            <!-- 成员姓名 -->
+            <h4 class="name">张紫齐</h4>
+            <!-- 成员职位 -->
+            <p class="position">前端工程师</p>
+            <!-- 成员社交账号 -->
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img
+                src="images/smiling-woman-wearing-black-sweater-1587009.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="name">米诗艺</h4>
+            <p class="position">UI设计师</p>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img
+                src="images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg"
+                alt=""
+              />
+            </div>
+            <h4 class="name">纪乐泉</h4>
+            <p class="position">后端工程师</p>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="images/business-woman-2697954_1920.jpg" alt="" />
+            </div>
+            <h4 class="name">云秋贻</h4>
+            <p class="position">市场专员</p>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+            <!-- 数据展示  -->
+      <section id="data-section" class="data-section">
+        <!-- 单个数据  -->
+        <div class="data-piece">
+          <!-- 图标 -->
+          <i class="fas fa-code"></i>
+          <!-- 数据 -->
+          <div class="num">156</div>
+          <!-- 单位 -->
+          <div class="data-desc">行代码</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-award"></i>
+          <div class="num">288</div>
+          <div class="data-desc">个奖项</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-laugh-wink"></i>
+          <div class="num">1588</div>
+          <div class="data-desc">位客户</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-folder"></i>
+          <div class="num">200</div>
+          <div class="data-desc">个项目</div>
+        </div>
+      </section>
+
+
+
+      <div class="activities">
+          <!-- 动态 -->
+          <div class="activity">
+            <!-- 动态图片 -->
+            <div class="act-image-wrapper">
+              <img src="images/activity01-image.jpg" alt="" />
+            </div>
+            <!-- 动态元数据，包括发表日期和评论数量 -->
+            <div class="meta">
+              <!-- 发布日期 -->
+              <p class="date-published">
+                <i class="far fa-calendar"></i> 2019年12月1日
+              </p>
+
+              <p class="comments"><i class="far fa-comments"></i> 33条评论</p>
+            </div>
+            <!-- 动态标题 -->
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <!-- 动态内容摘要 -->
+            <article>
+              网络公司原本指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商，还有无线接入、网络游戏、网络视频、网络培训、网络销售。
+            </article>
+            <!-- 阅读更多按钮 -->
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="images/watercrafts-on-river-3464632.jpg" alt="" />
+            </div>
+            <div class="meta">
+              <p class="date-published">
+                <i class="far fa-calendar"></i> 2019年12月1日
+              </p>
+              <p class="comments"><i class="far fa-comments"></i> 33条评论</p>
+            </div>
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <article>
+              网络公司原本指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商，还有无线接入、网络游戏、网络视频、网络培训、网络销售。
+            </article>
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="images/red-suspension-bridge-3493772.jpg" alt="" />
+            </div>
+            <div class="meta">
+              <p class="date-published">
+                <i class="far fa-calendar"></i> 2019年12月1日
+              </p>
+              <p class="comments"><i class="far fa-comments"></i> 33条评论</p>
+            </div>
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <article>
+              网络公司原本指的是提供网络服务的互联网内容提供商ICP公司，提供互联网接入的ISP公司，提供内容托管的IDC提供商，还有无线接入、网络游戏、网络视频、网络培训、网络销售。
+            </article>
+            <button class="readmore-btn">阅读更多</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <dd class="pos-right clearfix">
+                      <div class="events">
+                        <div class="events-header">
+                          A Very Very Looooooooooooooooooooong Event Heading
+                        </div>
+                        <div class="events-body">
+                          <div class="row">
+                            <div class="col-md-6 pull-left">
+                              <img
+                                class="events-object img-responsive img-rounded"
+                                src="/images/new4.JPG"
+                              />
+                            </div>
+                            <div class="events-desc">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute
+                              irure dolor in reprehenderit in voluptate velit
+                              esse cillum dolore eu fugiat nulla pariatur.
+                              Excepteur sint occaecat cupidatat non proident,
+                              sunt in culpa qui officia deserunt mollit anim id
+                              est laborum.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="events-footer"></div>
+                      </div>
+                    </dd>
+
+
+
+
+
+
+
+
+
+
+                    
+    <div class="details" style="z-index: 300">
+      <div class="city">
+        <div class="picture">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="VivaTimeline">
+                  <dl>
+                    <dd class="pos-left clearfix">
+                      <div class="events">
+                        <div class="events-body">
+                          <div class="row">
+                            <div class="col-md-6 pull-left">
+                              <img
+                                class="events-object img-responsive img-rounded"
+                                src="/images/new1.JPG"
+                              />
+                            </div>
+                            <div class="events-desc">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute
+                              irure dolor in reprehenderit in voluptate velit
+                              esse cillum dolore eu fugiat nulla pariatur.
+                              Excepteur sint occaecat cupidatat non proident,
+                              sunt in culpa qui officia deserunt mollit anim id
+                              est laborum.
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 pull-left">
+                              <img
+                                class="events-object img-responsive img-rounded"
+                                src="/images/new2.JPG"
+                              />
+                            </div>
+                            <div class="events-desc">
+                              Morbi at nisi vitae mauris pretium egestas. Morbi
+                              placerat risus ligula, nec placerat urna porta
+                              vel. Nullam sollicitudin orci quis odio eleifend,
+                              ut facilisis orci lobortis. Vivamus sed lobortis
+                              odio. Nam volutpat, leo a ullamcorper luctus,
+                              sapien libero auctor est, sed semper massa turpis
+                              sed quam. Mauris posuere, libero in ultricies
+                              dignissim, lacus purus egestas urna, nec semper
+                              lorem tellus non eros. Nam at bibendum libero.
+                              Curabitur a ante et orci cursus tincidunt. Vivamus
+                              dictum, libero et rhoncus congue, nulla erat
+                              mollis dui, vitae cursus dui justo quis velit. In
+                              a tellus arcu. Nam at lobortis nisl. Donec
+                              consequat placerat eros, quis elementum mauris
+                              sodales a. Maecenas id feugiat velit. Phasellus
+                              dictum eleifend varius. Cras nec orci turpis.
+                              Aenean ut turpis nibh.
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 pull-left">
+                              <img
+                                class="events-object img-responsive img-rounded"
+                                src="/images/new3.JPG"
+                              />
+                            </div>
+                            <div class="events-desc">
+                              Cras condimentum, metus ut vehicula euismod, odio
+                              massa pulvinar neque, id gravida neque est et sem.
+                              Proin consequat id nibh quis molestie. Quisque
+                              vehicula purus id purus elementum facilisis.
+                              Phasellus sodales nibh quis neque rhoncus aliquet.
+                              Nunc eget ipsum efficitur, pretium arcu et,
+                              gravida purus. Phasellus tempor lacus ac enim
+                              pulvinar elementum. Integer aliquet justo lacinia
+                              nunc tempus vulputate.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                  
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="word"></div>
+      </div>
+
+      <div class="food"></div>
+      <div class="scenery"></div>
+    </div>
+
+
+
+    <div class="demo debug" style="z-index: 300">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="navbar" style="opacity: 0.6">
+              <ul class="menu">
+                <!-- <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-pinterest"></a></li> -->
+                <li><a  class="fa fa-plane"></a><div class="animate-plane"></div></li>
+                <li><a  class="fa fa-cutlery"></a></li>
+                <li><a  class="fa fa-star"></a></li>
+                <!-- <li><a href="#" class="fa fa-github"></a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

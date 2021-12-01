@@ -1,0 +1,148 @@
+.container * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border: solid 1px black;*/
+	/* transform: scale(0.1); */
+}
+
+.nav-content,
+.tab-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 300;
+	transform: scale(0.5);
+	
+}
+.nav-content{
+	left: 30%;
+	top:13%;
+	background-color: transparent;
+}
+
+.nav-content>.nav-wrap {
+	width: 40vw;
+	height: 40vw;
+	border-radius: 50%;
+	background-color: #4d5a7209;
+	transition: .5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-content>.nav-wrap>span {
+	width: 50%;
+	height: 50%;
+	font-size: 25vw;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10%;
+}
+
+.tab-content {
+	z-index: 200;
+}
+
+.tab-content>.tab-wrap {
+	width: 30vw;
+	height: 30vw;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s ease;
+}
+
+.tab-content>.tab-active {
+	width: 60vw;
+	height: 60vw;
+}
+
+.tab-content>.tab-wrap:last-child {
+	z-index: -1;
+}
+
+.tab-content>.tab-wrap p {
+	width: 20%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #bbbdc265;
+	font-size: 4vw;
+	color: #FFFFFF;
+}
+
+.tab-content>.tab-wrap p:nth-child(1) {
+	position: absolute;
+	right: 0;
+	top: 0;
+	/* display: none; */
+}
+
+.tab-content>.tab-wrap p:nth-child(2) {
+	position: absolute;
+	right: -300px;
+	top: 0;
+	/* display: none; */
+}
+
+.tab-content>.tab-wrap p:nth-child(3) {
+	position: absolute;
+	right: -600px;
+	top: 0;
+	/* display: none; */
+}
+/* 
+.tab-content>.tab-wrap p:nth-child(4) {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+} */
+
+.tab-content>.tab-wrap:last-child p {
+	transform: rotate(-45deg);
+}
+
+.tab-content>.tab-wrap>.tab-list-warp,
+.tab-content>.tab-wrap>.tab-list-warp-rotate {
+	width: 100%;
+	height: 100%;
+}
+
+.tab-content>.tab-wrap>.tab-list-warp-rotate {
+	transform: rotate(45deg);
+}
+
+/*移动端的(hover)是点击效果*/
+/*.tab-content>.tab-wrap p:hover {
+	background-color: #336bd0;
+}*/
+
+/* .nav-active {
+	transform: rotate(180deg);
+} */
+
+.show-plist{
+	display: none;
+}
+
+.fa-style{
+	color: white;
+}
+
+.tab-content>.tab-wrap p:hover{
+	background-color: var(--desert-color);
+	transition: 0.4s ease-in ;
+
+}
+/*  +.tab-content>.tab-wrap p>a */
+.tab-content>.tab-wrap p:hover>a{
+	color: rgba(178, 240, 172, 0.719);
+} 	

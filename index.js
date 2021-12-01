@@ -204,16 +204,16 @@ ScrollReveal().reveal(".data-section", {
   },
 });
 // 数据，背景视差滚动
-window.addEventListener("scroll", () => {
-  const bottom = dataSectionEl.getBoundingClientRect().bottom;
-  const top = dataSectionEl.getBoundingClientRect().top;
-  // 如果在可见区域内
-  if (bottom >= 0 && top <= window.innerHeight) {
-    dataSectionEl.style.backgroundPosition = `center calc(50% - ${
-      bottom / 5
-    }px)`;
-  }
-});
+// window.addEventListener("scroll", () => {
+//   const bottom = dataSectionEl.getBoundingClientRect().bottom;
+//   const top = dataSectionEl.getBoundingClientRect().top;
+//   // 如果在可见区域内
+//   if (bottom >= 0 && top <= window.innerHeight) {
+//     dataSectionEl.style.backgroundPosition = `center calc(50% - ${
+//       bottom / 5
+//     }px)`;
+//   }
+// });
 
 //#region 实现响应式部分
 /* ***** 响应式**** */
@@ -279,9 +279,10 @@ list = [
   { ele: "about-us" },
   { ele: "showcases" },
   { ele: "service" },
-  { ele: "team-intro" },
-  { ele: "data-section" },
+  // { ele: "team-intro" },
+  // { ele: "data-section" },
   { ele: "company-activities" },
+  {ele:"footer-section"}
   // { ele: "footer-menus" },
 ];
 list = initSrollPosition("body", list);
